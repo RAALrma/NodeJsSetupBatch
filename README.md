@@ -32,4 +32,5 @@ Node.jsパッケージ管理ツール
 # 動作確認
 
 このバッチファイルは以下の環境でテストしています。
-Windows 10 Professional 64bit版
+
+- Windows 10 Professional 64bit版
