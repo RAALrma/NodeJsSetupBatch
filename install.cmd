@@ -5,7 +5,6 @@ REM Git、Atom、Nodistをインストール
 choco install Git Atom Nodist -y
 
 REM Node.js、npmをインストール
-REM nodistが自動で終了しないため、インストール終了を待つ。
 start /B /I nodist global 9.11.2 && timeout 30
 start /B /I nodist npm match && timeout 30
 
