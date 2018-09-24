@@ -15,5 +15,5 @@ REM mocha、istanboolをインストール
 npm install -g mocha
 npm install -g nyc
 
-echo インストール終了
-echo ウィンドウを閉じてください。
+REM インストール終了
+REM ウィンドウを閉じてください。
