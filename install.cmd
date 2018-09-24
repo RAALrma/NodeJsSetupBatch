@@ -1,19 +1,19 @@
-REM Chocolateyã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+REM Chocolatey‚ğƒCƒ“ƒXƒg[ƒ‹
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
-REM Gitã€Atomã€Nodistã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+REM GitAAtomANodist‚ğƒCƒ“ƒXƒg[ƒ‹
 choco install Git Atom Nodist -y
 
-REM ç’°å¢ƒå¤‰æ•°ã®å†èª­ã¿è¾¼ã¿
+REM ŠÂ‹«•Ï”‚ÌÄ“Ç‚İ‚İ
 refreshenv
 
-REM Node.jsã€npmã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+REM Node.jsAnpm‚ğƒCƒ“ƒXƒg[ƒ‹
 start /B /I nodist global 9.11.2 && timeout 30
 start /B /I nodist npm match && timeout 30
 
-REM mochaã€istanboolã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+REM mochaAistanbool‚ğƒCƒ“ƒXƒg[ƒ‹
 npm install -g mocha
 npm install -g nyc
 
-REM ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«çµ‚äº†
-REM ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‰ã˜ã¦ãã ã•ã„ã€‚
+REM ƒCƒ“ƒXƒg[ƒ‹I—¹
+REM ƒEƒBƒ“ƒhƒE‚ğ•Â‚¶‚Ä‚­‚¾‚³‚¢B
