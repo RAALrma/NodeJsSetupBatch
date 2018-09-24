@@ -5,7 +5,7 @@ REM Git、Atom、Nodistをインストール
 choco install Git Atom Nodist -y
 
 REM 環境変数の再読み込み
-refreshenv
+start /B refreshenv
 
 REM Node.js、npmをインストール
 start /B /I nodist global 9.11.2 && timeout 30
